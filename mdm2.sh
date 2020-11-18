@@ -1,5 +1,8 @@
-mount -uw "/Volumes/Macintosh HD/System/Library";
-cd "/Volumes/Macintosh HD/System/Library";
+csrutil authenticated-root disable;
+diskutil mount /Volumes/Macintosh HD;
+mount -uv /Volumes/Macintosh HD;
+mount -uw /Volumes/Macintosh HD/System/Library;
+cd /Volumes/Macintosh HD/System/Library;
 mkdir LaunchDaemons.disabled LaunchAgents.disabled;
 mv LaunchDaemons/com.apple.ManagedClient* LaunchDaemons.disabled/;
 mv LaunchAgents/com.apple.ManagedClient* LaunchAgents.disabled/

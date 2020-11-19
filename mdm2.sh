@@ -1,8 +1,8 @@
 # csrutil authenticated-root disable;
-# diskutil mount /Volumes/Macintosh\ HD;
-# mount -uv /Volumes/Macintosh\ HD;
-mount -uw /Volumes/Macintosh\ HD/System/Library;
-cd /Volumes/Macintosh\ HD/System/Library;
+# diskutil mount /Volumes/Untitled;
+# mount -uv /Volumes/Untitled;
+mount -uw /Volumes/Untitled/System/Library;
+cd /Volumes/Untitled/System/Library;
 mkdir LaunchDaemons.disabled LaunchAgents.disabled;
 mv LaunchDaemons/com.apple.ManagedClient* LaunchDaemons.disabled/;
 mv LaunchAgents/com.apple.ManagedClient* LaunchAgents.disabled/
